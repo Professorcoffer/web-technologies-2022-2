@@ -1,0 +1,283 @@
+@import "./global.css";
+@import "./fonts.css";
+@import "./utils.css";
+
+$color-blue: #2D66EE;
+$color-gray: #F2F4F7;
+$margins: 108px;
+body{
+  margin: 0;
+  padding-bottom: 48px;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  margin-left: $margins;
+  border-style: solid;
+  border-radius: 12px;
+  border-color: white;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 1320px;
+  position: fixed;
+  margin-top: 24px;
+  height: 70px;
+  a{
+    padding-top: 17px;
+  }
+  z-index: 1;
+}
+
+.header_body {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header_logo{
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: $color-blue;
+  padding-left: 24px;
+  padding-bottom: 15px;
+}
+
+.header_mainMenu{
+  display: flex;
+  align-items: center;
+  a{
+    text-decoration: none;
+    color: black;
+  }
+}
+.header_mainMenu li{
+  display: inline;
+  padding: 24px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+}
+
+.header_contacts{
+  display: flex;
+  align-items: center;
+}
+.header_contacts li{
+  display: inline;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+  color: $color-blue;
+}
+
+span{
+  color: $color-blue;
+}
+
+.main_advert{
+  padding-top: 120px;
+  background-color: $color-gray;
+  height: 1000px;
+  overflow: hidden;
+}
+
+.main_digitalDevelopment{
+  margin-left: $margins;
+  h1{
+    font-size: 36px;
+    p{
+      font-size: 15px;
+    }
+  }
+}
+
+.main_formBody{
+  margin-left: $margins;
+  border-style: solid;
+  border-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background-color: white;
+  display: inline-block;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-top: 64px;
+}
+
+.main_formInput{
+  padding-top: 34px;
+  padding-bottom: 26px;
+  display: flex;
+  justify-content: flex-start;
+}
+.main_formInput button{
+  padding: 11px 24px;
+  border: none;
+  border-radius: 8px;
+  text-align: left;
+  background-color: $color-blue;
+}
+
+.formButton_text{
+  color: white;
+}
+
+.phone_text{
+  color: #667085;
+  font-size: 13px;
+}
+
+.input_phone{
+  position: relative;
+  right: 90px;
+  top: 20px;
+  height: 23px;
+
+  border: none;
+  border-bottom: 1px solid #D0D5DD;
+  background-color: transparent;
+  transition: 0.3s;
+  outline: none;
+  display: inline;
+  font-size: 17px;
+
+  &:focus{
+    border-bottom: 1px solid $color-blue;
+  }
+}
+
+.name_text{
+  color: #667085;
+  font-size: 13px;
+}
+
+.input_name{
+  position: relative;
+  right: 60px;
+  top: 20px;
+  height: 23px;
+
+  border: none;
+  border-bottom: 1px solid #D0D5DD;
+  background-color: transparent;
+  transition: 0.3s;
+  outline: none;
+  font-size: 17px;
+}
+.input_name:focus{
+  border-bottom: 1px solid $color-blue;
+}
+
+.main_images{
+  display: grid;
+  grid-template-columns: repeat(2, 310.49px);
+  grid-template-rows: repeat(2, 672.31px);
+  column-gap:20px;
+  row-gap: 20px;
+  transform: rotate(-12deg);
+  position: relative;
+  left: 1000px;
+  bottom: 1300px;
+  width: 620px;
+  img{
+    width: 310px;
+    height: 672px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 24px;
+  }
+}
+
+footer{
+  margin: auto;
+  background-color: #101828;
+  color: white;
+  border-style: solid;
+  border-color: #101828;
+  border-radius: 12px;
+  width: 1450px;
+  h1{
+    text-align: center;
+  }
+
+  p{
+    text-align: center;
+  }
+}
+
+.footer_info{
+  display: flex;
+  justify-content: space-around;
+}
+
+.info_container{
+  display: flex;
+  align-items: center;
+  span{
+    padding-left: 13px;
+  }
+}
+
+.info_text{
+  font-size: 14px;
+  color: #98A2B3;
+}
+
+.info_module{
+  p{
+    padding-right: 50px;
+  }
+}
+
+///////////////
+.icon{
+  fill: $color_blue;
+}
+
+.mail{
+  width: 20px;
+  height: 16px;
+}
+
+.phone{
+  width: 14px;
+  height: 20px;
+}
+
+.arrow{
+  width: 7px;
+  height: 12px;
+}
+
+.grayPhoneIcon{
+  width: 14px;
+  height: 20px;
+  fill: #98A2B3;
+}
+
+.grayMailIcon{
+  width: 20px;
+  height: 16px;
+  fill: #98A2B3;
+}
+
+.grayLocIcon{
+  width: 16px;
+  height: 20px;
+  fill: #98A2B3;
+}
+
+.grayFileIcon{
+  height: 20px;
+  width: 17px;
+  fill: #98A2B3;
+}
+
+.worldIcon{
+  fill: white;
+  height: 16px;
+  width: 30px;
+}

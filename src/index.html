@@ -11,77 +11,86 @@
 <body>
 
 <header>
-    <a href="index.html" class="header_logo">IT WEBSITE</a>
-    <nav>
-        <ul class="header_mainMenu">
-            <li>Services</li>
-            <li>Media</li>
-            <li>Cases</li>
-            <li>FAQ</li>
-            <li>Contacts</li>
-        </ul>
-    </nav>
-    <nav>
-        <ul class="header_contacts">
-            <li><svg class="phoneIcon"><use href="./icons.svg#phone" /></svg></li>
-            <li>+7 (111) 111 11 11</li>
-            <li>+7 (111) 111 11 11</li>
-            <li><svg class="mailIcon"><use href="./icons.svg#mail" /></svg></li>
-            <li>itcompany@mail.com</li>
-        </ul>
-    </nav>
+    <div class="header_body">
+        <a href="index.html" class="header_logo">IT WEBSITE</a>
+        <nav>
+             <ul class="header_mainMenu">
+                 <li><a href="#"></a></li>
+                 <li><a href="#">Media</a></li>
+                 <li><a href="#">Cases</a></li>
+                 <li><a href="#">FAQ</a></li>
+                 <li><a href="#">Contacts</a></li>
+             </ul>
+        </nav>
+        <nav>
+            <ul class="header_contacts">
+                 <li><svg class="phone icon"><use href="./icons.svg#phone" /></svg></li>
+                 <li>+7 (111) 111 11 11</li>
+                 <li>+7 (111) 111 11 11</li>
+                 <li><svg class="mail icon"><use href="./icons.svg#mail" /></svg></li>
+                 <li>itcompany@mail.com</li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <main>
     <section class="main_advert">
-        <div>
+        <div class="main_digitalDevelopment">
             <h1>Development of <span>mobile applications</span> and <span>web services</span> of any complexity</h1>
             <p>We create mobile applications for iOS, Android that transfer your business to mobile applications of your customers' devices</p>
         </div>
 
-        <div class="main_inputInfo">
+        <div class="main_formBody">
             <h2>Leave your contacts and we will call you back
                 within 30 minutes</h2>
+
+            <div class="main_formInput">
+                <label for="input_phone" class="phone_text">Phone number</label>
+                <input id = "input_phone" type="text" class="input_phone">
+
+                <label for="input_name" class="name_text">Full name</label>
+                <input id = "input_name" type="text" class="input_name">
+
+                <button class = "main_formButton"><span class="formButton_text">Get<br> consultation</span></button>
+            </div>
         </div>
 
-        <div class="main_Input">
-            <div class="main_phoneInput">
-                <label for="input_phone" class="label">Phone number</label>
-                <input id = "input_phone" type="text" class="input_phone">
-            </div>
-
-            <div class="main_nameInput">
-                <label for="input_name" class="label">Full name</label>
-                <input id = "input_name" type="text" class="input_name">
-            </div>
+        <div class="main_images">
+            <img src="assets/img/screenshot1.jfif" alt="">
+            <img src="assets/img/screenshot2.jfif" alt="">
+            <img src="assets/img/screenshot3.jfif" alt="">
+            <img src="assets/img/screenshot4.jfif" alt="">
+            <img src="assets/img/screenshot5.jfif" alt="">
+            <img src="assets/img/screenshot6.jfif" alt="">
         </div>
     </section>
     <hr>
 
-    <section class="main_development">
+    <div class="main_development">
         <div class="main_tech">
             <h1>Full development cycle</h1>
-            <p>We use proven technologies</p>
-            <h4>Web</h4>>
-            <p>PHP / Javascript / Node.JS / Web Socket / Socket.io / Vue.js/ Nuxt / MySQL / Laravel / GO lang / django / Python</p>
+            <p id="tech_text">We use proven technologies</p>
+            <h4>Web</h4>
+            <p>PHP <span>/</span> Javascript <span>/</span> Node.JS <span>/</span> Web Socket <span>/</span> Socket.io <span>/</span> Vue.js<span>/</span><br> Nuxt <span>/</span> MySQL <span>/</span> Laravel / GO lang <span>/</span> django <span>/</span> Python</p>
             <h4>Mobile</h4>
-            <p>Swift / Kotlin / Alamofire / Firebase / CoreData / Room / Realm / Coroutine / RxJava / RxSwift / Unit Test / Navigation</p>
+            <p>Swift <span>/</span> Kotlin <span>/</span> Alamofire <span>/</span> Firebase <span>/</span> CoreData <span>/</span> Room <span>/</span> Realm <span>/</span><br> Coroutine <span>/</span> RxJava <span>/</span> RxSwift <span>/</span> Unit Test <span>/</span> Navigation</p>
         </div>
 
         <div class="main_service">
             <nav>
                 <ul>
-                    <li><a href="#">iOS  development</a> <svg class="arrowIcon"> <use href="./icons.svg#arrow" /></svg></li>
-                    <li><a href="#">Android development</a> <svg class="arrowIcon"> <use href="./icons.svg#arrow" /></svg></li>
-                    <li><a href="#">Web development</a> <svg class="arrowIcon"> <use href="./icons.svg#arrow" /></svg></li>
-                    <li><a href="#">UI/UX design</a> <svg class="arrowIcon"> <use href="./icons.svg#arrow" /></svg></li>
-                    <li><a href="#">Testing</a> <svg class="arrowIcon"> <use href="./icons.svg#arrow" /></svg></li>
-                    <li><a href="#">Launch</a> <svg class="arrowIcon"> <use href="./icons.svg#arrow" /></svg></li>
-                    <li><a href="#">IT consulting</a> <svg class="arrowIcon"> <use href="./icons.svg#arrow" /></svg></li>
+                    <li><a href="#">iOS  development</a> <svg class="arrow icon"> <use href="./icons.svg#arrow" /></svg></li>
+                    <li><a href="#">Android development</a> <svg class="arrow icon"> <use href="./icons.svg#arrow" /></svg></li>
+                    <li><a href="#">Web development</a> <svg class="arrow icon"> <use href="./icons.svg#arrow" /></svg></li>
+                    <li><a href="#">UI/UX design</a> <svg class="arrow icon"> <use href="./icons.svg#arrow" /></svg></li>
+                    <li><a href="#">Testing</a> <svg class="arrow icon"> <use href="./icons.svg#arrow" /></svg></li>
+                    <li><a href="#">Launch</a> <svg class="arrow icon"> <use href="./icons.svg#arrow" /></svg></li>
+                    <li><a href="#">IT consulting</a> <svg class="arrow icon"> <use href="./icons.svg#arrow" /></svg></li>
                 </ul>
             </nav>
         </div>
-    </section>
+    </div>
     <hr>
 
     <section class="main_developments">
@@ -115,9 +124,9 @@
             <p>Business analysis / iOS / Android / QA / UI/UX Design</p>
             <ul>
                 <li>Казахстан</li>
-                <li><svg class="locIcon"><use href=".icons.svg#geolocation" /></svg></li>
+                <li><svg class="loc icon"><use href="./icons.svg#geolocation" /></svg></li>
                 <li>Medicine</li>
-                <li><svg class="medIcon"><use href="./icons.svg#medicine" /></svg></li>
+                <li><svg class="med icon"><use href="./icons.svg#medicine" /></svg></li>
             </ul>
             <h1>400% + 200 000</h1>
             <p>User Growth Active Users</p>
@@ -162,10 +171,49 @@
 </main>
 
 <footer>
-    <h1>IT WEBSITE</h1>
+    <<h1>IT WEBSITE</h1>
     <div class="footer_info">
+        <div class="info_module">
+            <div class="info_container">
+                <svg class="grayPhoneIcon">
+                    <use href="./icons.svg#phone"/>
+                </svg>
+                <span class="info_text">Contact nums</span>
+            </div>
+            <p>+7 (778) 395 90 26</p>
+        </div>
 
+        <div class="info_module">
+            <div class="info_container">
+                <svg class="grayMailIcon">
+                    <use href="./icons.svg#mail"/>
+                </svg>
+                <span class="info_text">Post</span>
+            </div>
+            <p>mail@mail.com</p>
+        </div>
+
+        <div class="info_module">
+            <div class="info_container">
+                <svg class="grayLocIcon">
+                    <use href="./icons.svg#geolocation"/>
+                </svg>
+                <span class="info_text">Address</span>
+            </div>
+            <p>City city, street st. 90</p>
+        </div>
+
+        <div class="info_module">
+            <div class="info_container">
+                <svg class="grayFileIcon">
+                    <use href="./icons.svg#file"/>
+                </svg>
+                <span class="info_text">Leave a request</span>
+            </div>
+            <p>Leave a request</p>
+        </div>
     </div>
+    <p><svg class="worldIcon"> <use href="./icons.svg#world" /></svg>We work throughout world</p>
 </footer>
 
 </body>
