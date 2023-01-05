@@ -13,23 +13,32 @@
 <header>
 
     <div class="header_body">
+
         <a href="index.html" class="header_logo">IT WEBSITE</a>
         <nav>
-             <ul class="header_mainMenu">
-                 <li><a href="#">Services</a></li>
-                 <li><a href="#">Media</a></li>
-                 <li><a href="#">Cases</a></li>
-                 <li><a href="#">FAQ</a></li>
-                 <li><a href="#">Contacts</a></li>
-             </ul>
+            <ul class="header_mainMenu">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Cases</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
         </nav>
         <nav>
             <ul class="header_contacts">
-                 <li><svg class="phone icon"><use href="./icons.svg#phone" /></svg></li>
-                 <li>+7 (111) 111 11 11</li>
-                 <li>+7 (111) 111 11 11</li>
-                 <li><svg class="mail icon"><use href="./icons.svg#mail" /></svg></li>
-                 <li>itcompany@mail.com</li>
+                <li>
+                    <svg class="phone icon">
+                        <use href="./icons.svg#phone"/>
+                    </svg>
+                </li>
+                <li>+7 (111) 111 11 11</li>
+                <li>+7 (111) 111 11 11</li>
+                <li>
+                    <svg class="mail icon">
+                        <use href="./icons.svg#mail"/>
+                    </svg>
+                </li>
+                <li>itcompany@mail.com</li>
             </ul>
         </nav>
     </div>
@@ -38,24 +47,32 @@
 <main>
     <section class="main_advert">
         <div class="main_digitalDevelopment">
-            <h1>Development of <span>mobile applications</span> and <span>web services</span> of any complexity</h1>
-            <p>We create mobile applications for iOS, Android that transfer your business to mobile applications of your customers' devices</p>
+            <h1>Development of <span>mobile <br>applications</span> and <span>web services</span> of any
+                complexity</h1>
+            <p>We create mobile applications for iOS, Android that transfer your business to mobile applications
+                of your customers' devices</p>
         </div>
 
-        <div class="main_formBody">
-            <h2>Leave your contacts and we will call you back
-                within 30 minutes</h2>
+        <form>
+            <div class="main_formBody">
+                <h2>Leave your contacts and we will call you back within 30 minutes</h2>
 
-            <div class="main_formInput">
-                <label for="input_phone" class="phone_text">Phone number</label>
-                <input id = "input_phone" type="text" class="input_phone">
+                <div class="main_formInput">
+                    <div class="phone_box">
+                        <label for="input_phone" class="phone_text">Phone number</label>
+                        <input id="input_phone" type="text" class="input_phone">
+                    </div>
 
-                <label for="input_name" class="name_text">Full name</label>
-                <input id = "input_name" type="text" class="input_name">
+                    <div class="name_box">
+                        <label for="input_name" class="name_text">Full name</label>
+                        <input id="input_name" type="text" class="input_name">
+                    </div>
 
-                <button class = "main_formButton"><span class="formButton_text">Get<br> consultation</span></button>
+                    <button class="main_formButton"><span class="formButton_text">Get<br> consultation</span>
+                    </button>
+                </div>
             </div>
-        </div>
+        </form>
 
         <div class="main_images">
             <img src="assets/img/screenshot1.jfif" alt="">
@@ -66,7 +83,6 @@
             <img src="assets/img/screenshot6.jfif" alt="">
         </div>
     </section>
-    <hr>
 
     <div class="main_development">
         <div class="main_tech">
