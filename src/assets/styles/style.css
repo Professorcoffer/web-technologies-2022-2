@@ -42,7 +42,7 @@ header {
     position: fixed;
     margin-top: 24px;
     height: 70px;
-    z-index: 1;
+    z-index: 10;
 }
 header a {
     padding-top: 17px;
@@ -51,7 +51,10 @@ header a {
     header {
         max-width: 100%;
         margin-left: auto;
+        margin-top: 16px;
         justify-content: center;
+        flex-direction: column;
+        display: flex;
     }
 }
 @media screen and (max-width: 425px) {
@@ -195,12 +198,18 @@ span {
 
 .main_advert {
     padding-top: 120px;
-    height: 1000px;
+    height: 780px;
     overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+    .main_advert {
+        padding-top: 106px;
+        height: 656px;
+    }
 }
 @media screen and (max-width: 425px) {
     .main_advert {
-        height: 1300px;
+        height: 1161px;
     }
 }
 
@@ -208,9 +217,11 @@ span {
     margin-left: 108px;
 }
 .main_digitalDevelopment h1 {
+    width: 600px;
     font-size: 36px;
 }
-.main_digitalDevelopment h1 p {
+.main_digitalDevelopment p {
+    width: 560px;
     font-size: 15px;
 }
 @media screen and (max-width: 768px) {
@@ -218,10 +229,11 @@ span {
         margin-left: 32px;
     }
     .main_digitalDevelopment h1 {
-        width: 300px;
+        width: 357px;
+        font-size: 28px;
     }
     .main_digitalDevelopment p {
-        width: 300px;
+        width: 362px;
     }
 }
 @media screen and (max-width: 425px) {
@@ -247,28 +259,42 @@ span {
     padding-left: 24px;
     margin-top: 64px;
 }
+.main_formBody h2 {
+    font-size: 20px;
+    width: 440px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
 @media screen and (max-width: 768px) {
     .main_formBody {
-        width: 400px;
-        height: 400px;
+        margin-top: 20px;
+        padding-left: 32px;
+        width: 324px;
+        height: 356px;
         position: relative;
         right: 75px;
+    }
+    .main_formBody h2 {
+        font-size: 16px;
+        margin-top: 32px;
+        margin-bottom: 20px;
+        width: 295px;
     }
 }
 @media screen and (max-width: 425px) {
     .main_formBody {
+        top: 338px;
         width: 350px;
-        height: 400px;
+        height: 356px;
         position: relative;
-        right: 70px;
-        z-index: 10;
+        right: 83px;
+        z-index: 1;
     }
 }
 
 
 
 .main_formInput {
-    padding-top: 34px;
     padding-bottom: 26px;
     height: 120px;
     display: grid;
@@ -284,9 +310,13 @@ span {
         left: 0;
         top: 50px;
         width: 150px;
+        height: 40px;
     }
     .main_formInput button br {
         display: none;
+    }
+    .main_formInput {
+        row-gap: 32px;
     }
 }
 
@@ -358,8 +388,8 @@ span {
     row-gap: 20px;
     transform: rotate(-12deg);
     position: relative;
-    left: 1000px;
-    bottom: 1200px;
+    left: 950px;
+    bottom: 860px;
     width: 620px;
 }
 .main_images img {
@@ -371,10 +401,10 @@ span {
 }
 @media screen and (max-width: 768px) {
     .main_images {
-        left: 340px;
+        left: 500px;
         grid-template-columns: repeat(2, 146.49px);
-        grid-template-rows: repeat(2, 317.31px);
-    }
+        grid-template-rows: repeat(2, 317.31px); }
+
     .main_images img {
         width: 146px;
         height: 317px;
@@ -382,8 +412,8 @@ span {
 }
 @media screen and (max-width: 425px) {
     .main_images {
-        left: 100px;
-        bottom: 700px;
+        left: 125px;
+        bottom: 605px;
         grid-template-columns: repeat(2, 146.49px);
         grid-template-rows: repeat(2, 288.31px);
     }
@@ -392,6 +422,7 @@ span {
         height: 288px;
     }
 }
+
 
 .main_development {
     padding-top: 50px;
@@ -407,7 +438,9 @@ span {
 }
 @media screen and (max-width: 425px) {
     .main_development {
-        padding-bottom: 530px;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 50px;
     }
 }
 
@@ -420,12 +453,13 @@ span {
     margin-left: 108px;
 }
 .main_tech p {
+    width: 496px;
     font-size: 17px;
     margin-left: 108px;
 }
 @media screen and (max-width: 768px) {
     .main_tech h1 {
-        font-size: 36px;
+        font-size: 28px;
         margin-left: 17px;
     }
     .main_tech h4 {
@@ -433,13 +467,15 @@ span {
         margin-left: 17px;
     }
     .main_tech p {
-        font-size: 17px;
+        width: 277px;
+        font-size: 14px;
         margin-left: 17px;
     }
 }
 @media screen and (max-width: 425px) {
     .main_tech h1 {
-        font-size: 36px;
+        width: 321px;
+        font-size: 28px;
         margin-left: 17px;
     }
 }
@@ -473,18 +509,20 @@ span {
     outline: none;
 }
 @media screen and (max-width: 768px) {
+    .main_service {
+        top: 110px;
+    }
     .main_service li {
         padding-left: 0;
     }
 }
 @media screen and (max-width: 425px) {
+    .main_service {
+        right: 70px;
+        top: 20px;
+    }
     .main_service li {
-        padding-left: 0;
-        padding-bottom: 24px;
-        display: inline-block;
         position: relative;
-        right: 270px;
-        top: 540px;
     }
 }
 
@@ -498,6 +536,9 @@ span {
 }
 @media screen and (max-width: 768px) {
     .main_developments h1 {
+        padding-top: 17px;
+        padding-bottom: 20px;
+        font-size: 28px;
         margin-left: 17px;
     }
 }
@@ -526,8 +567,16 @@ span {
 }
 @media screen and (max-width: 425px) {
     .main_listOfIndustries {
+        align-items: center;
+        align-content: stretch;
         margin-left: 17px;
         grid-template-columns: repeat(2, 200.49px);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .wrongImg {
+        padding-top: 8px;
     }
 }
 
@@ -552,15 +601,19 @@ span {
     }
 }
 .main_projects p {
+    width: 600px;
     margin-left: 108px;
 }
 @media screen and (max-width: 768px) {
     .main_projects p {
+        font-size: 14px;
+        width: 450px;
         margin-left: 38px;
     }
 }
 @media screen and (max-width: 425px) {
     .main_projects p {
+        width: 378px;
         margin-left: 16px;
     }
 }
@@ -569,6 +622,17 @@ span {
     font-size: 36px;
     font-family: 'Inter', sans-serif;
     padding-top: 30px;
+}
+@media screen and (max-width: 768px) {
+    .project_proud {
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .project_proud {
+        font-size: 28px;
+        padding-top: unset;
+    }
 }
 
 .main_listOfProjects {
@@ -582,9 +646,10 @@ span {
 }
 @media screen and (max-width: 425px) {
     .main_listOfProjects {
-        padding-top: 0;
-        padding-bottom: 150px;
-        margin-left: -16px;
+        padding-top: 20px;
+        padding-bottom: 200px;
+        margin-left: -8px;
+        margin-right: 59px;
     }
 }
 .main_listOfProjects li {
@@ -626,9 +691,24 @@ span {
     font-family: 'Inter', sans-serif;
     padding-top: 30px;
 }
+@media screen and (max-width: 768px) {
+    .main_projectHeader {
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .main_projectHeader {
+        font-size: 28px;
+    }
+}
 
 .main_projectInfo {
     padding-bottom: 24px;
+}
+@media screen and (max-width: 768px) {
+    .main_projectInfo br {
+        display: none;
+    }
 }
 
 .text_gray {
@@ -657,6 +737,12 @@ span {
     color: white;
     width: 132px;
     height: 58px;
+}
+@media screen and (max-width: 768px) {
+    .main_formButton {
+        top: unset;
+        right: unset;
+    }
 }
 
 .main_projectTags {
@@ -690,13 +776,22 @@ span {
 .main_projectDisplay {
     font-size: 24px;
 }
+@media screen and (max-width: 768px) {
+    .main_projectDisplay {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .main_projectDisplay {
+        font-size: 20px;
+    }
+}
 
 .project_infoText {
     font-size: 13px;
 }
 
 .main_projectPercents {
-    padding-top: 20px;
     width: 250px;
 }
 
@@ -705,6 +800,16 @@ span {
     bottom: 102px;
     left: 200px;
     width: 250px;
+}
+@media screen and (max-width: 768px) {
+    .main_projectNumber {
+        bottom: 90px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .main_projectNumber {
+        bottom: 90px;
+    }
 }
 
 .main_projectPlatforms {
@@ -751,7 +856,7 @@ span {
 @media screen and (max-width: 425px) {
     .main_projectImage {
         left: 50px;
-        bottom: 770px;
+        bottom: 745px;
     }
 }
 
