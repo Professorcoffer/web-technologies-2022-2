@@ -137,5 +137,24 @@ function fourthTask($menu) {
     return $res . "</ul>";
 }
 
+// 5 задание смотри в engine
+
+
+// 6 задание
+function sixthTask() {
+    $districts = [
+        'Московская область' => ['Москва', 'Зеленоград', 'Клин'],
+        'Ленинградская область' => ['Санкт-Петербург', 'Всеволожск', 'Павловск', 'Кронштадт'],
+    ];
+
+    foreach ($districts as $district => $localities) {
+        echo $district . ': <br>';
+        foreach ($localities as $localityIndex => $locality) if (mb_substr($locality, 0, 1) == 'К') {
+            echo $locality . ($localityIndex == count($localities) - 1 ? "." : ", ");
+        }
+        echo '<br>';
+    }
+}
+
 echo fourthTask($menu);
 ?>
